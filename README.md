@@ -145,7 +145,11 @@ Foltech solutions deals with detecting software defects called bugs, System and 
     <br>
     <a class="apply-button" href="webpay.html">Click here to Apply for our program</a>
   </div>
-
+ <script>
+  document.querySelector('.apply-button').addEventListener('click', function(event) {
+    alert('Thank you for your interest! We will review your application.');
+  });
+</script>
   <footer>
     <p>Email: info@foltech.com | Phone: +234-810-975-0268</p>
     <p>&copy; 2025 FOLTECH SOLUTIONS. All rights reserved.</p>
