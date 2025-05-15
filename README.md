@@ -145,7 +145,11 @@ Foltech solutions deals with detecting software defects called bugs, System and 
     <br>
     <a class="apply-button" href="webpay.html">Click here to Apply for our program</a>
   </div>
-
+  <script>
+  document.querySelector('.apply-button').addEventListener('click', function(event) {
+    alert('Thank you for your interest! We will review your application.');
+  });
+</script>
   <footer>
     <p>Email: info@foltech.com | Phone: +234-810-975-0268</p>
     <p>&copy; 2025 FOLTECH SOLUTIONS. All rights reserved.</p>
@@ -185,7 +189,6 @@ Foltech solutions deals with detecting software defects called bugs, System and 
     box-sizing: border-box;
     padding: 10px;
   }
-  /* Additional styles for form */
   .contact-form {
     max-width: 500px;
     margin: 20px auto;
@@ -234,7 +237,7 @@ Foltech solutions deals with detecting software defects called bugs, System and 
 
 <div class="scroll-text">This is scrolling text for announcements or updates!</div>
 
-<!-- Contact Form -->
+
 <form class="contact-form" id="myForm" novalidate>
   <h2>Contact Us</h2>
   <label for="name">Name:</label>
@@ -255,48 +258,46 @@ Foltech solutions deals with detecting software defects called bugs, System and 
 
 <script>
   document.getElementById('myForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent form from submitting
+    e.preventDefault();
 
-    // Clear previous errors
+    
     document.getElementById('nameError').textContent = '';
     document.getElementById('emailError').textContent = '';
     document.getElementById('messageError').textContent = '';
     document.getElementById('formSuccess').textContent = '';
 
-    // Get form values
+    
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
 
     let valid = true;
 
-    // Validate Name
+  
     if (name === '') {
       document.getElementById('nameError').textContent = 'Please enter your name.';
       valid = false;
-    }
-
-    // Validate Email
+    } 
     const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    if (email === '') {
+    (email === '') {
       document.getElementById('emailError').textContent = 'Please enter your email.';
       valid = false;
-    } else if (!email.match(emailPattern)) {
+    }
+    (!email.match(emailPattern)) 
+    {
       document.getElementById('emailError').textContent = 'Please enter a valid email.';
       valid = false;
     }
 
-    // Validate Message
-    if (message === '') {
+     (message === '') {
       document.getElementById('messageError').textContent = 'Please enter your message.';
       valid = false;
     }
 
-    if (valid) {
-      // You can add form submission logic here (like AJAX)
+    (valid) { 
       document.getElementById('formSuccess').textContent = 'Thank you! Your message has been sent.';
       
-      // Optionally, reset form after submission
+    
       document.getElementById('myForm').reset();
     }
   });
