@@ -1,0 +1,46 @@
+name: Node.js CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build app
+        run: npm run build
+
+      # Optional: Deploy to GitHub Pages or server if needed
+      # - name: Deploy
+      #   run: your-deploy-command-here
+{
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0", // or your real test command
+    "build": "node build.js" // or your actual build step
+  }
+}
+foltechsolution/
+├── .github/
+│   └── workflows/
+│       └── node-deploy.yml
+├── package.json
+├── app.js / index.js
+├── build.js (if needed)
