@@ -1,4 +1,4 @@
-# FoltechSolutions.github.io
+# FoltechSolutions.github.io/index.html
 Foltech solutions deals with detecting software defects called bugs, System and Network challenge to Solutions. 
 <!DOCTYPE html>
 <html lang="en">
