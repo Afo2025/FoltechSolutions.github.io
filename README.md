@@ -143,28 +143,14 @@ Foltech solutions deals with detecting software defects called bugs, System and 
     <h1>Welcome to FOLTECH SOLUTIONS</h1>
     <img class="ai-image" src="https://via.placeholder.com/300x200?text=AI+Computer" alt="AI Computers">
     <br>
-    <a class="apply-button" href="webpay.html">Click here to Apply for our program</a>
-  </div>
-  <script>
-  document.querySelector('.apply-button').addEventListener('click', function(event) {
-    alert('Thank you for your interest! We will review your application.');
-  });
-</script>
-  <footer>
-    <p>Email: info@foltech.com | Phone: +234-810-975-0268</p>
-    <p>&copy; 2025 FOLTECH SOLUTIONS. All rights reserved.</p>
-  </footer>
-
-</body>
-</html>
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>My Web Page</title>
 <style>
-  header {
+  header { 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -189,6 +175,7 @@ Foltech solutions deals with detecting software defects called bugs, System and 
     box-sizing: border-box;
     padding: 10px;
   }
+  /* Additional styles for form */
   .contact-form {
     max-width: 500px;
     margin: 20px auto;
@@ -237,7 +224,7 @@ Foltech solutions deals with detecting software defects called bugs, System and 
 
 <div class="scroll-text">This is scrolling text for announcements or updates!</div>
 
-
+<!-- Contact Form -->
 <form class="contact-form" id="myForm" novalidate>
   <h2>Contact Us</h2>
   <label for="name">Name:</label>
@@ -258,46 +245,48 @@ Foltech solutions deals with detecting software defects called bugs, System and 
 
 <script>
   document.getElementById('myForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+    e.preventDefault(); // Prevent form from submitting
 
-    
+    // Clear previous errors
     document.getElementById('nameError').textContent = '';
     document.getElementById('emailError').textContent = '';
     document.getElementById('messageError').textContent = '';
     document.getElementById('formSuccess').textContent = '';
 
-    
+    // Get form values
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
 
     let valid = true;
 
-  
+    // Validate Name
     if (name === '') {
       document.getElementById('nameError').textContent = 'Please enter your name.';
       valid = false;
-    } 
+    }
+
+    // Validate Email
     const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    (email === '') {
+    if (email === '') {
       document.getElementById('emailError').textContent = 'Please enter your email.';
       valid = false;
-    }
-    (!email.match(emailPattern)) 
-    {
+    } else if (!email.match(emailPattern)) {
       document.getElementById('emailError').textContent = 'Please enter a valid email.';
       valid = false;
     }
 
-     (message === '') {
+    // Validate Message
+    if (message === '') {
       document.getElementById('messageError').textContent = 'Please enter your message.';
       valid = false;
     }
 
-    (valid) { 
+    if (valid) {
+      // You can add form submission logic here (like AJAX)
       document.getElementById('formSuccess').textContent = 'Thank you! Your message has been sent.';
       
-    
+      // Optionally, reset form after submission
       document.getElementById('myForm').reset();
     }
   });
@@ -305,3 +294,13 @@ Foltech solutions deals with detecting software defects called bugs, System and 
 
 </body>
 </html>
+    <a class="apply-button" href="webpay.html">Click here to Apply for our program</a>
+  </div> ) 
+  {
+  alert('Thank you for your interest! We will review your application.');
+  });
+</script>
+  <footer>
+    <p>Email: info@foltech.com | Phone: +234-810-975-0268</p>
+    <p>&copy; 2025 FOLTECH SOLUTIONS. All rights reserved.</p>
+  </footer>
