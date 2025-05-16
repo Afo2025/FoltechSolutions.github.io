@@ -21,7 +21,7 @@ Foltech solutions deals with detecting software defects called bugs, System and 
       color: white;
     }
 
-    .logo {
+    .logo {<img src="/assets/img/your-logo.png" alt="Your Website Logo" width="100" height="50">
       font-size: 1.5em;
       font-weight: bold;
     }
