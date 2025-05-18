@@ -31,8 +31,8 @@ jobs:
       # Optional: Deploy to GitHub Pages or server if needed
       # - name: Deploy
       #   run: your-deploy-command-here
-{
-  "scripts": {
+
+  "scripts": 
     "test": "echo \"No tests yet\" && exit 0", // or your real test command
     "build": "node build.js" // or your actual build step
   }
