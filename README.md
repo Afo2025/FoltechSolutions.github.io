@@ -156,3 +156,54 @@ Foltech solutions deals with detecting software defects called bugs, System and 
     <p>Email: info@foltech.com | Phone: +234-810-975-0268</p>
     <p>&copy; 2025 FOLTECH SOLUTIONS. All rights reserved.</p>
   </footer>
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foltech Solutions Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Sidebar -->
+  <div class="flex h-screen">
+    <aside class="w-64 bg-white shadow-lg hidden md:block">
+      <div class="p-4 text-xl font-bold text-blue-600 border-b">Foltech Dashboard</div>
+      <nav class="p-4 space-y-2">
+        <a href="#" class="block px-4 py-2 rounded hover:bg-blue-100">Home</a>
+        <a href="#" class="block px-4 py-2 rounded hover:bg-blue-100">Analytics</a>
+        <a href="#" class="block px-4 py-2 rounded hover:bg-blue-100">Projects</a>
+        <a href="#" class="block px-4 py-2 rounded hover:bg-blue-100">Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col">
+      <!-- Navbar -->
+      <header class="bg-white shadow p-4 flex justify-between items-center">
+        <div class="text-lg font-semibold">Welcome to Foltech Solutions</div>
+        <div class="space-x-4">
+          <button class="text-sm bg-blue-600 text-white px-3 py-1 rounded">Login</button>
+        </div>
+      </header>
+
+      <!-- Dashboard Content -->
+      <main class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h2 class="text-xl font-semibold mb-2">Users</h2>
+          <p class="text-3xl font-bold">1,230</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h2 class="text-xl font-semibold mb-2">Visitors</h2>
+          <p class="text-3xl font-bold">3,504</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h2 class="text-xl font-semibold mb-2">QA Project</h2>
+          <p class="text-3xl font-bold">87</p>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
