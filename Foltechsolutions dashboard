@@ -1,0 +1,58 @@
+FoltechSolutions.github.io/
+├── index.html                # Main landing dashboard page
+├── css/
+│   └── style.css             # Custom styles (if needed)
+├── js/
+│   └── script.js             # JavaScript for interactivity
+├── assets/
+│   ├── logo.png              # Company logo or icon
+│   └── dashboard-bg.jpg      # Optional background image
+├── README.md                 # Project overview and instructions
+├── .gitignore                # Files to ignore in Git (node_modules, etc.)
+
+---
+
+# README.md
+
+# FoltechSolutions Dashboard
+
+A clean and responsive web-based dashboard interface for **Foltech Solutions**, built with **HTML**, **Tailwind CSS**, and **JavaScript**. This dashboard is deployed using **GitHub Pages** at: [https://foltechsolutions.github.io](https://foltechsolutions.github.io)
+
+## ✨ Features
+- Modern responsive layout
+- Sidebar navigation
+- Dashboard analytics cards
+- Mobile-first design
+- Easily customizable
+
+## 📁 Project Structure
+```
+FoltechSolutions.github.io/
+├── index.html        # Main dashboard layout
+├── css/style.css     # Optional custom styles
+├── js/script.js      # JavaScript functionality
+├── assets/           # Images and static resources
+└── README.md         # Project documentation
+```
+
+## 🚀 Getting Started
+1. Clone the repository:
+```bash
+git clone https://github.com/FoltechSolutions/FoltechSolutions.github.io.git
+```
+
+2. Open `index.html` in your browser or deploy directly via GitHub Pages.
+
+## 🛠️ Technologies Used
+- HTML5
+- Tailwind CSS (via CDN)
+- JavaScript (vanilla)
+
+## 📌 Deployment
+This site is deployed with GitHub Pages. Any changes pushed to the `main` branch are automatically published.
+8
+## 🤝 Contributing
+Feel free to fork this repository, make changes, and submit a pull request.
+
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE).
