@@ -6,7 +6,14 @@ Foltech solutions deals with detecting software defects called bugs, System and 
   <meta charset="UTF-8">
   <title>FOLTECH QA SERVICES</title>
   <style>
-    body {
+    body {<div>
+  <h2>Ask the AI</h2>
+  <textarea id="userInput" rows="4" cols="50" placeholder="Ask me anything..."></textarea><br>
+  <button onclick="askAI()">Send</button>
+  <p><strong>AI Response:</strong></p>
+  <div id="response"></div>
+</div>
+
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f4f4;
@@ -145,7 +152,29 @@ Foltech solutions deals with detecting software defects called bugs, System and 
     <br>
 
 
-</body>
+</body><script>
+  async function askAI() {
+    const prompt = document.getElementById("userInput").value;
+
+    const responseDiv = document.getElementById("response");
+    responseDiv.innerHTML = "Thinking...";
+    const res = await fetch("https://foltech-solutions-github-io.vercel.app/api/chat", /completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer YOUR_OPENAI_API_KEY"
+      },
+      body: JSON.stringify({
+        model: "gpt-3.5-turbo",
+        messages: [{ role: "user", content: prompt }]
+      })
+    });
+
+    const data = await res.json();
+    const aiText = data.choices?.[0]?.message?.content;
+    responseDiv.innerHTML = aiText || "No response.";
+  }
+</script>
 </html>
     <a class="apply-button" href="webpay.html">Click here to Apply for our program</a>
   </div> ) 
