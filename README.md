@@ -7,6 +7,36 @@ Foltech solutions deals with detecting software defects called bugs, System and 
   <title>FOLTECH QA SERVICES</title>
   <style>
     body {<div>
+
+
+  <header>
+    <div class="logo">FOLTECH SOLUTIONS LOGO</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Events</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="scroll-text">
+    <p>Welcome to FOLTECH SOLUTIONS- Here we turn your software Challenges to Solutions</p>
+  "Foltech does IT Better" </div>
+
+  <div class="slideshow">
+    <div class="slides">
+      <img src="https://via.placeholder.com/1200x400?text=Slide+1" alt="QA Solutions">
+      <img src="https://via.placeholder.com/1200x400?text=Slide+2" alt="Network Solutions">
+      <img src="https://via.placeholder.com/1200x400?text=Slide+3" alt="System Solutions">
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Welcome to FOLTECH SOLUTIONS</h1>
+    <img class="ai-image" src="https://via.placeholder.com/300x200?text=AI+Computer" alt="AI Computers">
+    <br>
   <h2>Ask the AI</h2>
   <textarea id="userInput" rows="4" cols="50" placeholder="Ask me anything..."></textarea><br>
   <button onclick="askAI()">Send</button>
@@ -121,36 +151,6 @@ Foltech solutions deals with detecting software defects called bugs, System and 
   </sript>
 </head>
 <body>
-
-  <header>
-    <div class="logo">FOLTECH SOLUTIONS LOGO</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Services</a>
-      <a href="#">Events</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-
-  <div class="scroll-text">
-    <p>Welcome to FOLTECH SOLUTIONS- Here we turn your software Challenges to Solutions</p>
-  "Foltech does IT Better" </div>
-
-  <div class="slideshow">
-    <div class="slides">
-      <img src="https://via.placeholder.com/1200x400?text=Slide+1" alt="QA Solutions">
-      <img src="https://via.placeholder.com/1200x400?text=Slide+2" alt="Network Solutions">
-      <img src="https://via.placeholder.com/1200x400?text=Slide+3" alt="System Solutions">
-    </div>
-  </div>
-
-  <div class="content">
-    <h1>Welcome to FOLTECH SOLUTIONS</h1>
-    <img class="ai-image" src="https://via.placeholder.com/300x200?text=AI+Computer" alt="AI Computers">
-    <br>
-
 
 </body><script>
   async function askAI() {
