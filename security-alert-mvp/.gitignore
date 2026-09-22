@@ -1,0 +1,4 @@
+# Local secrets
+.env
+*.secret
+webhook-url.txt
