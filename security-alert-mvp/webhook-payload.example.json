@@ -1,0 +1,13 @@
+{
+  "repository": {
+    "name": "FoltechSolutions.github.io"
+  },
+  "alert": {
+    "affected_package_name": "example-package",
+    "rule": {
+      "id": "example-rule"
+    },
+    "severity": "high",
+    "html_url": "https://github.com/Afo2025/FoltechSolutions.github.io/security"
+  }
+}
