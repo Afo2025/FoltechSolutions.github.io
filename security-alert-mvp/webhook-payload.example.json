@@ -1,13 +1,13 @@
 {
+  "event": "dependabot_alert",
+  "action": "created",
   "repository": {
+    "full_name": "Afo2025/FoltechSolutions.github.io",
     "name": "FoltechSolutions.github.io"
   },
   "alert": {
-    "affected_package_name": "example-package",
-    "rule": {
-      "id": "example-rule"
-    },
     "severity": "high",
-    "html_url": "https://github.com/Afo2025/FoltechSolutions.github.io/security"
+    "html_url": "https://github.com/Afo2025/FoltechSolutions.github.io/security/dependabot",
+    "affected_package_name": "example-package"
   }
 }
